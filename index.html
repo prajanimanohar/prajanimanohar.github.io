@@ -186,7 +186,7 @@ const certs=[
 ["spss.jpg","Data Analysis & Statistical Techniques (SPSS)","Sacred Heart College · Jan 2026"]];
 const g=document.getElementById('certs'),lb=document.getElementById('lb');
 certs.forEach(([f,t,m])=>{const d=document.createElement('div');d.className='card cert';
-d.innerHTML=`<img src="assets/certs/${f}" alt="${t} certificate" loading="lazy"><div><h3>${t}</h3><p class="meta" style="margin:4px 0 0">${m}</p><a class="open" href="assets/certs/${f}" target="_blank" rel="noopener">Open full certificate ↗</a></div>`;
+d.innerHTML=`<img src="${f}" alt="${t} certificate" loading="lazy"><div><h3>${t}</h3><p class="meta" style="margin:4px 0 0">${m}</p><a class="open" href="assets/certs/${f}" target="_blank" rel="noopener">Open full certificate ↗</a></div>`;
 d.querySelector('img').onclick=()=>{lb.querySelector('img').src=`assets/certs/${f}`;lb.classList.add('on')};g.appendChild(d)});
 lb.onclick=()=>lb.classList.remove('on');
 document.addEventListener('keydown',e=>e.key==='Escape'&&lb.classList.remove('on'));
