@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#6d3fc0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M. Prajani | M.Sc. Applied Psychology Student & Aspiring Counsellor</title>
+<meta name="description" content="Portfolio of M. Prajani, M.Sc. Applied Psychology student at PSG College, Coimbatore.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f5fd;--card:#fff;--text:#2a2238;--muted:#6f6585;--accent:#6d3fc0;--accent2:#efe7fb;--line:#e3d9f2}
+@media(prefers-color-scheme:dark){:root{--bg:#15101e;--card:#1e1730;--text:#efeaf8;--muted:#a99dc0;--accent:#b794f4;--accent2:#2a1f42;--line:#332850}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.2;margin:0}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav b{font-family:Fraunces,serif;font-size:1.2rem;color:var(--accent)}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:.92rem}
+nav a{text-decoration:none;color:var(--text)}nav a:hover{color:var(--accent)}
+.hero{padding:70px 0 50px}
+.hero .wrap{display:grid;grid-template-columns:1fr 260px;gap:44px;align-items:center}
+.tag{display:inline-block;background:var(--accent2);color:var(--accent);padding:4px 14px;border-radius:99px;font-size:.85rem;font-weight:600;margin-bottom:16px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:14px}
+.hero p{color:var(--muted);max-width:560px;font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.btn{padding:11px 22px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem;border:1.5px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--bg)}
+.photo{width:260px;height:260px;border-radius:50%;object-fit:cover;border:6px solid var(--card);box-shadow:0 10px 40px rgba(0,0,0,.15)}
+section{padding:56px 0}
+h2{font-size:1.9rem;margin-bottom:28px}
+h2::after{content:"";display:block;width:44px;height:3px;background:var(--accent);margin-top:10px;border-radius:2px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:1.15rem;margin-bottom:4px}
+.meta{color:var(--muted);font-size:.9rem}
+.card ul{padding-left:18px;margin:12px 0 0}.card li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{background:var(--accent2);color:var(--accent);padding:7px 16px;border-radius:99px;font-size:.92rem;font-weight:500}
+.cert{padding:0;overflow:hidden;transition:transform .2s,box-shadow .2s;text-align:left;font:inherit;color:inherit}
+.cert:hover{transform:translateY(-4px);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.cert img{cursor:zoom-in;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:top;display:block;border-bottom:1px solid var(--line)}
+.cert div{padding:14px 18px}.cert h3{font-size:1rem}
+#lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:none;align-items:center;justify-content:center;z-index:50;padding:20px;cursor:zoom-out}
+#lb.on{display:flex}#lb img{max-width:100%;max-height:92vh;border-radius:8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+footer{border-top:1px solid var(--line);padding:36px 0;text-align:center;color:var(--muted);font-size:.9rem}
+.contact a{display:block;padding:8px 0;text-decoration:none;font-weight:500;border-bottom:1px solid var(--line)}.contact a:last-child{border:0}.contact a:hover{text-decoration:underline}.open{display:inline-block;margin-top:8px;font-size:.85rem;font-weight:600}
+@media(max-width:760px){.hero .wrap{grid-template-columns:1fr;text-align:center}.hero p{margin:auto}.btns{justify-content:center}.photo{margin:0 auto;order:-1;width:200px;height:200px}nav ul{display:none}.two{grid-template-columns:1fr}}
+
+/* ---- animation layer ---- */
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--accent);z-index:100}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.35;z-index:-1;animation:float 14s ease-in-out infinite}
+.b1{width:340px;height:340px;background:#b794f4;top:-60px;right:-60px}
+.b2{width:260px;height:260px;background:#f0a6ca;bottom:-40px;left:-60px;animation-delay:-6s}
+@keyframes float{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(30px,-30px) scale(1.12)}}
+.hero{position:relative;overflow:hidden}
+.hero .tag,.hero h1,.hero p,.hero .btns{opacity:0;transform:translateY(22px);animation:up .8s forwards}
+.hero h1{animation-delay:.15s}.hero p{animation-delay:.3s}.hero .btns{animation-delay:.45s}
+@keyframes up{to{opacity:1;transform:none}}
+.photo{animation:pop 1s .2s backwards cubic-bezier(.2,1.4,.4,1),bob 6s 1.2s ease-in-out infinite;transition:transform .15s}
+@keyframes pop{from{opacity:0;transform:scale(.6) rotate(-8deg)}}
+@keyframes bob{50%{translate:0 -10px}}
+.type{color:var(--accent);white-space:nowrap}
+.type::after{content:"|";margin-left:2px;animation:blink 1s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}
+.reveal{opacity:0;transform:translateY(34px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.reveal.in{opacity:1;transform:none}
+.card{transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 14px 32px rgba(0,0,0,.12);border-color:var(--accent)}
+.chip{transition:transform .2s,background .2s,color .2s}.chip:hover{transform:translateY(-3px) scale(1.06);background:var(--accent);color:var(--bg)}
+.btn{transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(109,63,192,.35)}
+nav a.act{color:var(--accent);font-weight:600}
+h2::after{width:0;transition:width .8s .2s}.reveal.in h2::after,h2.in::after{width:44px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px;margin-top:30px;max-width:760px}
+.stat{text-align:center}.stat b{font:700 2.2rem Fraunces,serif;color:var(--accent);display:block}.stat span{color:var(--muted);font-size:.9rem}
+.cert img{transition:transform .5s}.cert:hover img{transform:scale(1.06)}.cert{overflow:hidden}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal,.hero .tag,.hero h1,.hero p,.hero .btns{opacity:1;transform:none}}
+
+/* ---- psychology + splash ---- */
+#splash{position:fixed;inset:0;z-index:200;background:linear-gradient(135deg,#2b1055,#6d3fc0 60%,#b794f4);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;text-align:center;transition:transform .9s cubic-bezier(.7,0,.2,1)}
+#splash.out{transform:translateY(-100%)}
+.psi{font:700 7rem/1 Fraunces,serif;position:relative;animation:psiIn 1.2s both,glow 2s 1s ease-in-out infinite}
+.psi::before,.psi::after{content:"";position:absolute;inset:-30px;border:2px solid rgba(255,255,255,.5);border-radius:50%;animation:ring 2s ease-out infinite}
+.psi::after{animation-delay:.9s}
+@keyframes psiIn{from{opacity:0;transform:scale(.3) rotate(-90deg)}}
+@keyframes glow{50%{text-shadow:0 0 40px rgba(255,255,255,.9)}}
+@keyframes ring{from{transform:scale(.6);opacity:.9}to{transform:scale(1.8);opacity:0}}
+#splash h2{color:#fff;font-size:1.8rem;margin:34px 0 6px;opacity:0;animation:up .8s .7s forwards}
+#splash h2::after{display:none}
+#splash small{letter-spacing:.2em;text-transform:uppercase;opacity:0;animation:up .8s 1.1s forwards}
+body:not(.ready) .hero .tag,body:not(.ready) .hero h1,body:not(.ready) .hero p,body:not(.ready) .hero .btns,body:not(.ready) .photo{animation-play-state:paused}
+.hero::before{content:"Ψ";position:absolute;right:4%;top:50%;transform:translateY(-50%);font:700 24rem/1 Fraunces,serif;color:var(--accent);opacity:.07;z-index:-1;pointer-events:none}
+.sym{position:absolute;font-size:1.8rem;opacity:.35;z-index:-1;animation:float 9s ease-in-out infinite}
+.interest .ic{font-size:2rem;display:block;margin-bottom:8px}
+.interest p{color:var(--muted);margin:8px 0 0}
+.quote{max-width:760px;text-align:center;margin-top:34px;background:var(--accent2);border:0}
+.quote p{font:500 1.25rem Fraunces,serif;margin:0;transition:opacity .5s}
+.quote span{color:var(--muted);font-size:.9rem;transition:opacity .5s;display:block;margin-top:10px}
+.breathe{max-width:460px;text-align:center}
+.orbwrap{position:relative;height:230px;display:grid;place-items:center}
+.orb{width:120px;height:120px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d7c2fa,#6d3fc0);box-shadow:0 0 50px rgba(109,63,192,.5);transition:transform 4s ease-in-out}
+#bl{position:absolute;color:#fff;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.4);pointer-events:none}
+.breathe .btn{cursor:pointer;font:inherit;font-weight:600;margin-top:14px}
+</style>
+</head>
+<body id="top"><div id="splash"><div class="psi">Ψ</div><h2>Prajani M</h2><small>Psychology · Counselling · Well-being</small></div><div id="bar"></div>
+<nav><div class="wrap"><b>M. Prajani</b>
+<ul><li><a href="#about">About</a></li><li><a href="#education">Education</a></li><li><a href="#experience">Experience</a></li><li><a href="#interests">Interests</a></li><li><a href="#certificates">Certificates</a></li><li><a href="#skills">Skills</a></li><li><a href="#contact">Contact</a></li></ul></div></nav>
+
+<header class="hero"><span class="sym" style="left:8%;top:14%">🧠</span><span class="sym" style="left:46%;top:8%;animation-delay:-3s">💭</span><span class="sym" style="left:40%;bottom:8%;animation-delay:-5s">💜</span><span class="sym" style="right:30%;top:20%;animation-delay:-7s">Ψ</span><span class="blob b1"></span><span class="blob b2"></span><div class="wrap">
+<div>
+<span class="tag">M.Sc. Applied Psychology · 1st Year</span>
+<h1>Hi, I'm Prajani,<br>an aspiring <span class="type" id="type"></span></h1>
+<p>First-year M.Sc. Applied Psychology student at PSG College, Coimbatore, with a B.Sc. in Psychology, hands-on exposure to counselling, and training in therapy techniques and statistical analysis.</p>
+<div class="btns"><a class="btn p" href="#contact">Get in touch</a><a class="btn" href="#certificates">View certificates</a>
+<a class="btn" href="mailto:prajanimanohar@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/prajani-manohar-905095364" target="_blank" rel="noopener">LinkedIn</a></div>
+</div>
+<img class="photo" src="assets/profile.jpg" alt="Portrait of M. Prajani">
+</div></header>
+
+<section id="about"><div class="wrap"><h2>About me</h2>
+<p style="max-width:760px">I'm a first-year M.Sc. Applied Psychology student at PSG College, Coimbatore, who enjoys understanding people and helping them feel heard. After completing my B.Sc. Psychology at Sacred Heart College, Tirupattur, I'm now deepening my learning in applied psychology and its practice. Through internship experience, counselling courses and workshops, I've built a foundation in empathy, ethical practice and client observation. I'm also an award-winning speaker and a Grad Student member of the American Psychological Association.</p>
+<div class="stats"><div class="stat"><b data-n="86" data-s="%">0</b><span>B.Sc. Psychology score</span></div><div class="stat"><b data-n="7">0</b><span>Certificates</span></div><div class="stat"><b data-n="30" data-s="+">0</b><span>CPD hours of counselling training</span></div><div class="stat"><b data-n="3">0</b><span>Languages</span></div></div></div></section>
+
+<section id="education"><div class="wrap"><h2>Education</h2>
+<div class="grid">
+<div class="card"><h3>M.Sc. Applied Psychology</h3><p class="meta">PSG College of Arts and Science, Coimbatore · Bharathiyar University</p><p><b>1st Year</b> · Pursuing (2026 – 2028)</p></div>
+<div class="card"><h3>B.Sc. Psychology</h3><p class="meta">Sacred Heart College (Autonomous), Tirupattur · Thiruvalluvar University</p><p><b>86%</b> · Completed 2026</p></div>
+<div class="card"><h3>Higher Secondary</h3><p class="meta">Government Girls Higher Secondary School, Krishnagiri</p><p><b>81.83%</b> · 2023</p></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap"><h2>Internship experience</h2>
+<div class="card" style="max-width:760px"><h3>Summer Psychology / Counselling Intern</h3>
+<p class="meta">Hibiscus Connect · May 2025 (1 month)</p>
+<ul><li>Observed counselling sessions and therapeutic techniques</li><li>Gained exposure to counselling processes and client interaction</li><li>Learned the importance of confidentiality and ethical counselling practice</li></ul></div></div></section>
+
+<section id="interests"><div class="wrap"><h2>Areas of interest</h2>
+<div class="grid">
+<div class="card interest"><span class="ic">🧠</span><h3>Counselling Psychology</h3><p>Active listening, empathy and ethical, client-centred practice.</p></div>
+<div class="card interest"><span class="ic">🎯</span><h3>Solution-Focused Brief Therapy</h3><p>A strengths-based, goal-oriented approach to helping clients move forward.</p></div>
+<div class="card interest"><span class="ic">🌱</span><h3>Holistic Well-Being</h3><p>Building resilience and balance across mind, body and relationships.</p></div>
+<div class="card interest"><span class="ic">🤝</span><h3>Relationship Skills</h3><p>Healthy communication, boundaries and meaningful connection.</p></div>
+<div class="card interest"><span class="ic">📊</span><h3>Research &amp; Statistics</h3><p>Evidence-based practice and data analysis using SPSS.</p></div>
+</div>
+<div class="card quote"><p id="q"></p><span id="qa"></span></div>
+</div></section>
+
+<section id="mindful"><div class="wrap"><h2>Take a mindful moment</h2>
+<div class="card breathe"><div class="orbwrap"><div class="orb" id="orb"></div><span id="bl">Ready</span></div>
+<p class="meta">A simple breathing exercise: in for 4 seconds, hold for 2, out for 6.</p>
+<button class="btn p" id="bb">Start</button></div></div></section>
+
+<section id="certificates"><div class="wrap"><h2>Certifications &amp; workshops</h2>
+<div class="grid" id="certs"></div></div></section>
+
+<section id="skills"><div class="wrap"><h2>Skills</h2>
+<div class="chips"><span class="chip">Empathy &amp; active listening</span><span class="chip">Communication &amp; public speaking</span><span class="chip">Basic counselling techniques</span><span class="chip">Client observation &amp; emotional support</span><span class="chip">SPSS (basic statistics)</span><span class="chip">MS Word, PowerPoint, Excel</span></div>
+<div class="two" style="margin-top:36px">
+<div class="card"><h3>Extracurriculars</h3><ul><li>Top positions in district and state-level speech competitions</li><li>2nd prize, state-level science exhibition (Trichy, 2018)</li><li>Quiz competitions and cultural events</li><li>Member, Media Forum, Sacred Heart College</li></ul></div>
+<div class="card"><h3>Languages</h3><ul><li>Tamil: Fluent</li><li>English: Proficient</li><li>Telugu: Conversational</li></ul></div></div></div></section>
+
+<section id="contact"><div class="wrap"><h2>Contact</h2>
+<div class="card contact" style="max-width:560px">
+<a href="mailto:prajanimanohar@gmail.com">✉️ prajanimanohar@gmail.com</a>
+<a href="tel:+918526881368">📞 +91-8526881368</a>
+<a href="https://wa.me/918526881368" target="_blank" rel="noopener">💬 Chat on WhatsApp</a>
+<a href="https://www.linkedin.com/in/prajani-manohar-905095364" target="_blank" rel="noopener">💼 linkedin.com/in/prajani-manohar-905095364</a>
+<a href="https://www.google.com/maps/search/?api=1&query=Krishnagiri,+Tamil+Nadu" target="_blank" rel="noopener">📍 Krishnagiri, Tamil Nadu</a>
+</div></div></section>
+
+<footer>© <span id="y"></span> M. Prajani · <a href="mailto:prajanimanohar@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/prajani-manohar-905095364" target="_blank" rel="noopener">LinkedIn</a> · <a href="#top">Back to top</a></footer>
+<div id="lb"><img alt=""></div>
+
+<script>
+const certs=[
+["internship.jpg","Summer Psychology Internship","Hibiscus Connect · May 2025"],
+["apa.jpg","APA Grad Student Membership","American Psychological Association · 2026"],
+["counselling.jpg","Certificate in Basic Counselling Skills","Fountain Institute · 30 CPD hrs · Aug 2025"],
+["sfbt.jpg","Solution-Focused Brief Therapy Workshop","Sacred Heart College · 19 Aug 2025"],
+["wellbeing.jpg","Holistic Well-Being Programme","Sacred Heart College × Loyola College · Aug 2025"],
+["relationship.jpg","Basic Relationship Skills","Fountain Institute · Aug 2024"],
+["spss.jpg","Data Analysis & Statistical Techniques (SPSS)","Sacred Heart College · Jan 2026"]];
+const g=document.getElementById('certs'),lb=document.getElementById('lb');
+certs.forEach(([f,t,m])=>{const d=document.createElement('div');d.className='card cert';
+d.innerHTML=`<img src="assets/certs/${f}" alt="${t} certificate" loading="lazy"><div><h3>${t}</h3><p class="meta" style="margin:4px 0 0">${m}</p><a class="open" href="assets/certs/${f}" target="_blank" rel="noopener">Open full certificate ↗</a></div>`;
+d.querySelector('img').onclick=()=>{lb.querySelector('img').src=`assets/certs/${f}`;lb.classList.add('on')};g.appendChild(d)});
+lb.onclick=()=>lb.classList.remove('on');
+document.addEventListener('keydown',e=>e.key==='Escape'&&lb.classList.remove('on'));
+document.getElementById('y').textContent=new Date().getFullYear();
+
+// ---- animation layer ----
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;
+// typing effect
+const words=['counsellor','psychologist','listener','therapist'];let wi=0,ci=0,del=false;const te=document.getElementById('type');
+function tick(){const w=words[wi];te.textContent=w.slice(0,ci);
+if(rm){te.textContent=words[0];return}
+if(!del&&ci===w.length){del=true;return setTimeout(tick,1500)}
+if(del&&ci===0){del=false;wi=(wi+1)%words.length}
+ci+=del?-1:1;setTimeout(tick,del?50:95)}
+const sp=document.getElementById('splash');
+function ready(){document.body.classList.add('ready');tick()}
+if(rm){sp.remove();ready()}else{document.body.style.overflow='hidden';setTimeout(()=>{sp.classList.add('out');document.body.style.overflow='';ready();setTimeout(()=>sp.remove(),1000)},2600)}
+// rotating quotes
+const qs=[["The curious paradox is that when I accept myself just as I am, then I can change.","Carl Rogers"],["The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed.","Carl Jung"]];
+let qi=0;const q=document.getElementById('q'),qa=document.getElementById('qa');
+function showQ(){q.textContent='“'+qs[qi][0]+'”';qa.textContent='— '+qs[qi][1]}
+showQ();if(!rm)setInterval(()=>{q.style.opacity=qa.style.opacity=0;setTimeout(()=>{qi=(qi+1)%qs.length;showQ();q.style.opacity=qa.style.opacity=1},500)},7000);
+// breathing exercise
+const orb=document.getElementById('orb'),bl=document.getElementById('bl'),bb=document.getElementById('bb');let on=false,bt;
+bb.onclick=()=>{on=!on;bb.textContent=on?'Stop':'Start';clearTimeout(bt);
+if(!on){orb.style.transitionDuration='1s';orb.style.transform='';bl.textContent='Ready';return}
+const ph=[['Breathe in',4,1.7],['Hold',2,1.7],['Breathe out',6,1]];let i=0;
+(function step(){const [t,d,sc]=ph[i%3];bl.textContent=t;orb.style.transitionDuration=(t==='Hold'?.1:d)+'s';orb.style.transform='scale('+sc+')';i++;bt=setTimeout(step,d*1000)})()};
+// reveal on scroll + counters
+document.querySelectorAll('section .card,section h2,.chip,.stat,section>.wrap>p').forEach((el,i)=>{el.classList.add('reveal');el.style.setProperty('--d',(i%4)*.08+'s')});
+function count(el){const n=+el.dataset.n,suf=el.dataset.s||'';if(rm){el.textContent=n+suf;return}let t0;
+(function f(t){t0=t0||t;const k=Math.min((t-t0)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-k,3)))+suf;k<1&&requestAnimationFrame(f)})(performance.now())}
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');const b=e.target.querySelector('b[data-n]');b&&count(b);io.unobserve(e.target)}}),{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+// progress bar + active nav
+const bar=document.getElementById('bar'),links=[...document.querySelectorAll('nav a')],secs=links.map(a=>document.querySelector(a.getAttribute('href')));
+addEventListener('scroll',()=>{bar.style.width=scrollY/(document.body.scrollHeight-innerHeight)*100+'%';
+let c=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<innerHeight*.4)c=i});links.forEach((a,i)=>a.classList.toggle('act',i===c))},{passive:true});
+// photo tilt toward cursor
+const ph=document.querySelector('.photo');if(!rm&&matchMedia('(hover:hover)').matches)addEventListener('mousemove',e=>{const x=(e.clientX/innerWidth-.5)*10,y=(e.clientY/innerHeight-.5)*-10;ph.style.transform=`perspective(600px) rotateY(${x}deg) rotateX(${y}deg)`});
+</script>
+</body>
+</html>
